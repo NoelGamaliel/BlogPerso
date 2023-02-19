@@ -44,8 +44,21 @@ nav ul li {
     padding-right: 60px;
 }
 
+/***** btn-search *****/
+.btn-search {
+    padding: 10px;
+}
 
+input[type=search] {
+    width: 70%;
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+}
+input[type=submit] {
+    padding: 8px 19px;
 
+}
 
 
 
