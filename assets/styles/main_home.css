@@ -73,9 +73,14 @@ nav ul li a {
     background-repeat: no-repeat;
     height: 35vh;
 }
+.banner_container {
+    width: 90%;
+    margin: auto;
+}
 .banner .banner_content h1 {
     color: #ff0000;
-    padding: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 2rem;
 }
@@ -84,18 +89,16 @@ nav ul li a {
     padding: 10px;
     margin-top: -20px;
     margin-bottom: 25px;
-    margin-left: 20px;
+    color: #f1f1f1;
 }
 
 .banner .banner_content a {
-    border: 2px solid #fff;
-    border-radius: 50px 50px;
+    border: 1px solid #ffffff;
     background-color: #ff0000;
     color: #fff;
     padding: 11px 22px;
     margin-bottom: 20px;
     margin-right: 50px;
-    margin-left: 25px;
     font-weight: bold;
 }
 
@@ -158,6 +161,7 @@ hr {
     box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.66);
     padding: 10px;
     margin: auto;
+    margin-bottom: 10%;
 }
 
 .aside_wrapper h3 {
@@ -167,19 +171,68 @@ hr {
     text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
 footer {
+    position: relative;
+    display: flex;
     padding: 25px;
     background-color: black;
     color: #ff0000;
     text-align: center;
+    width: 100%;
+}
+
+
+/**** Media Query ****/
+@media (min-width: 480px) and (max-width: 580px)  {
+    /*** header ***/
+    nav {
+        background-color: #ff0000;
+    }
+    nav ul {
+        display: none;
+    }
+    #logo {
+        color: #000;
+        font-weight: bold;
+    }
+    .btn-toggle i {
+        color: #000;
+        font-size: 25px;
+        margin: 20px;
+        margin-right: 25px;
+        display: block;
+    }
+    .aside_wrapper {
+        display: none;
+    }
+    .article_wrapper {
+        width: 100%;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 780px)  {
+    /*** header ***/
+    nav {
+        background-color: #ff0000;
+    }
+    nav ul {
+        display: none;
+    }
+    #logo {
+        color: #000;
+        font-weight: bold;
+    }
+    .btn-toggle i {
+        color: #000;
+        font-size: 25px;
+        margin: 20px;
+        margin-right: 25px;
+        display: block;
+    }
+    .aside_wrapper {
+        display: none;
+    }
+    .article_wrapper {
+        width: 100%;
+    }
 }
