@@ -233,17 +233,16 @@ footer {
         flex-wrap: nowrap;
         height: 55px;
     }
-    nav ul {
-        display: none;
+    #mylinks {
         width: 90%;
         position: absolute;
         height: 110px;
-        padding: 10px;
+        padding: 1px;
         margin: auto;
         margin-top:55px;
         margin-bottom: 20px;
         flex-direction: column;
-        background-color: #3c0000;
+        background-color: #b38b8b;
         row-gap: 2;
         text-align: left;
         /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
