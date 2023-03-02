@@ -125,15 +125,14 @@ input[type=submit] {
     float: left;
     margin: auto;
     box-shadow: 1px 5px 12px rgba(0, 0, 0, 0.66);
-    background-color: #fff;
+    border-radius: 10px 10px;
+    margin-bottom: 20px;
 }
-
 hr {
     margin: 10px;
     border: 0;
     border-top: 1px solid #fcd6d6;
 }
-
 .article_design {
     padding: 10px;
     margin-bottom: 10px;
@@ -157,13 +156,12 @@ hr {
 .aside_wrapper {
     width: 25%;
     float: right;
-    background-color: #fff;
     box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.66);
+    border-radius: 10px 10px;
     padding: 10px;
     margin: auto;
     margin-bottom: 10%;
 }
-
 .aside_wrapper h3 {
     font-size: 1.5rem;
     color: #ff0000;
@@ -172,13 +170,13 @@ hr {
 }
 
 footer {
-    position: relative;
     display: flex;
     padding: 25px;
+    width: 100%;
     background-color: black;
     color: #ff0000;
     text-align: center;
-    width: 100%;
+    align-items: center;
 }
 
 
@@ -232,20 +230,49 @@ footer {
     /*** header ***/
     nav {
         background-color: #ff0000;
+        flex-wrap: nowrap;
+        height: 55px;
     }
     nav ul {
         display: none;
+        width: 90%;
+        position: absolute;
+        height: 110px;
+        padding: 10px;
+        margin: auto;
+        margin-top:55px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        background-color: #3c0000;
+        row-gap: 2;
+        text-align: left;
+        /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
     }
-    #logo {
-        color: #000;
+    nav ul li:hover {
+        padding: 10px;
         font-weight: bold;
+        background-color: #000;
+    }
+    nav ul li{
+        padding: 5px;
+        margin-left: 25px;
+        width: 90%;
+    }
+    nav ul li a {
+        color: #eaeaea;
+    }
+
+    #logo {     
+        color: #ffffff;
+        font-weight: bold;
+        margin-left: 10px;
     }
     .btn-toggle i {
         color: #000;
         font-size: 25px;
         margin: 20px;
         margin-right: 25px;
-        display: block;
+        display: none;
     }
     .banner {
         height: 57vh;
@@ -259,9 +286,11 @@ footer {
         width: auto;
         display: flex;
         flex-direction: column;
+        border-radius: 10px 10px;
     }
     .article_wrapper {
         width: 100%;
+        border-radius: 10px 10px;
     }
 }
 @media (min-width: 769px) and (max-width: 990px)  {
@@ -295,8 +324,10 @@ footer {
         width: auto;
         display: flex;
         flex-direction: column;
+        border-radius: 10px 10px;
     }
     .article_wrapper {
         width: 100%;
+        border-radius: 10px 10px;
     }
 }
