@@ -246,7 +246,7 @@ footer {
         background-color: #fd0000;
         row-gap: 2;
         text-align: left;
-        /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     nav ul li:hover {
         padding: 10px;
@@ -297,10 +297,38 @@ footer {
 @media (min-width: 769px) and (max-width: 990px)  {
     /*** header ***/
     nav {
-        background-color: #ff0000;
+        background-color: #ffffff;
     }
     nav ul {
         display: none;
+    }
+    #mylinks {
+        display: none;
+        width: 90%;
+        position: absolute;
+        height: 100px;
+        padding: 1px;
+        margin: auto;
+        margin-top:55px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        background-color: #fd0000;
+        row-gap: 2;
+        text-align: left;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    nav ul li:hover {
+        padding: 10px;
+        font-weight: bold;
+        background-color: #000;
+    }
+    nav ul li{
+        padding: 5px;
+        margin-left: 25px;
+        width: 90%;
+    }
+    nav ul li a {
+        color: #eaeaea;
     }
     #logo {
         color: #000;
