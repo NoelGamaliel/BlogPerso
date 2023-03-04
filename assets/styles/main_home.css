@@ -148,10 +148,6 @@ hr {
     margin-bottom: 20px;
 }
 
-
-
-
-
 /**** aside_wrapper ****/
 .aside_wrapper {
     width: 25%;
@@ -175,9 +171,21 @@ footer {
     width: 100%;
     background-color: black;
     color: #ff0000;
+}
+
+footer span {
+    margin: auto;
+    color: #fff;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
+.footer_fluid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
 
 
 /**** Media Query ****/
