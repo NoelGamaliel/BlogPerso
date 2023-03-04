@@ -171,19 +171,28 @@ footer {
     width: 100%;
     background-color: black;
     color: #ff0000;
+    margin:auto;
 }
 
 footer span {
-    margin: auto;
     color: #fff;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    text-align: right;
+    line-height: 2.5rem;
 }
 .footer_fluid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    margin: auto;
+}
+.footer_fluid .link_media ul {
+    display: flex;
+}
+.footer_fluid .link_media ul a {
+    color: #fff;
+    margin-right: 1px 0.2rem;
+    padding: 10px;
 }
 
 
