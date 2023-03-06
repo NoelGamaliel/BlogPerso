@@ -96,26 +96,11 @@ nav ul li a {
     border: 1px solid #ffffff;
     background-color: #ff0000;
     color: #fff;
-    padding: 11px 22px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     margin-right: 50px;
     font-weight: bold;
-}
-
-/***** btn-search banner *****/
-.btn-search {
-    padding: 10px;
-}
-
-input[type=search] {
-    width: 70%;
-    padding: 8px;
-    display: inline-block;
-    position: relative;
-}
-input[type=submit] {
-    padding: 8px 19px;
-
+    border-radius: 20px 20px;
 }
 
 /**** article_wrapper ****/
@@ -183,7 +168,7 @@ footer span {
 .footer_fluid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 120px;
     margin: auto;
 }
 .footer_fluid .link_media ul {
@@ -194,7 +179,6 @@ footer span {
     margin-right: 1px 0.2rem;
     padding: 10px;
 }
-
 
 
 /**** Media Query ****/
