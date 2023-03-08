@@ -16,8 +16,9 @@ html, body {
 .container_fluid {
     width: 90%;
     margin: auto;
-    background-color: #f1f1f1;
     max-height:max-content;
+    border-left: 2px dotted #ffffff;
+    border-right: 2px dotted #ffffff;
 }
 
 header {
@@ -55,6 +56,16 @@ nav ul li a {
     font-size: 16px;
     color: #ff0000;
     text-transform: uppercase;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+nav ul li a:hover {
+    font-weight: bold;
+    border: 0px;
+    border-bottom: 2px solid #ffffff;
+    padding: 0.8rem;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .btn_toggle i {
@@ -88,11 +99,11 @@ nav ul li a {
 .banner .banner_content p {
     padding: 10px;
     margin-top: -20px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     color: #f1f1f1;
 }
 
-.banner .banner_content a {
+#banner_about {
     border: 1px solid #ffffff;
     background-color: #ff0000;
     color: #fff;
@@ -103,14 +114,31 @@ nav ul li a {
     border-radius: 20px 20px;
 }
 
+#banner_contact {
+    border: 1px solid #ffffff;
+    color: #fff;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    font-weight: bold;
+    border-radius: 20px 20px;  
+}
+#banner_contact:hover {
+    border: 1px solid #ffffff;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    font-weight: bold;
+    border-radius: 20px 20px;  
+}
+
 /**** article_wrapper ****/
 .article_wrapper {
-    padding: 10px;
-    width: 73%;
+    width: 70%;
     float: left;
     margin: auto;
-    box-shadow: 1px 5px 12px rgba(0, 0, 0, 0.66);
-    border-radius: 10px 10px;
     margin-bottom: 20px;
 }
 hr {
@@ -119,35 +147,52 @@ hr {
     border-top: 1px solid #fcd6d6;
 }
 .article_design {
-    padding: 10px;
     margin-bottom: 10px;
-    border-radius: 10px 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.66); 
 }
 .article_design h1 {
+    padding: 10px;
+    background-color: #fd0000;
     font-size: 2rem;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 .article_design p {
+    padding: 10px;
     font-size: 1rem;
-    margin-bottom: 20px;
+}
+#article_links {
+    margin-bottom: 2rem;
 }
 
 /**** aside_wrapper ****/
 .aside_wrapper {
     width: 25%;
     float: right;
-    box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.66);
-    border-radius: 10px 10px;
-    padding: 10px;
     margin: auto;
     margin-bottom: 10%;
 }
 .aside_wrapper h3 {
+    padding: 10px;
     font-size: 1.5rem;
-    color: #ff0000;
-    margin-bottom: 1.5rem;
+    color: #000000;
+    background: #fd0000;
+    margin-bottom: 1rem;
     text-transform: uppercase;
+}
+aside {
+    background-color: #ffffff;
+    box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.66);
+}
+aside h1 {
+    background: #fd0000;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+aside p {
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 footer {
@@ -163,7 +208,7 @@ footer span {
     color: #fff;
     justify-content: flex-end;
     text-align: right;
-    line-height: 2.5rem;
+    line-height: 4rem;
 }
 .footer_fluid {
     display: grid;
@@ -179,6 +224,15 @@ footer span {
     margin-right: 1px 0.2rem;
     padding: 10px;
 }
+.footer_fluid .link_media ul a i {
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
 
 
 /**** Media Query ****/
@@ -288,11 +342,9 @@ footer span {
         width: auto;
         display: flex;
         flex-direction: column;
-        border-radius: 10px 10px;
     }
     .article_wrapper {
         width: 100%;
-        border-radius: 10px 10px;
     }
 }
 @media (min-width: 769px) and (max-width: 990px)  {
@@ -354,10 +406,8 @@ footer span {
         width: auto;
         display: flex;
         flex-direction: column;
-        border-radius: 10px 10px;
     }
     .article_wrapper {
         width: 100%;
-        border-radius: 10px 10px;
     }
 }
