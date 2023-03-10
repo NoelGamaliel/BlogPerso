@@ -14,7 +14,7 @@ html, body {
     background-color: #eaeaea;
 }
 .container_fluid {
-    width: 90%;
+    width: 80%;
     margin: auto;
     max-height:max-content;
     border-left: 2px dotted #ffffff;
@@ -76,7 +76,9 @@ nav ul li a:hover {
     display: none;
 }
 
-/**** Banner of the page ****/
+/*==== 
+    Banner of the page
+======*/
 .banner {
     background:linear-gradient(to bottom, rgba(10, 2, 0, 0.968), rgba(0, 0, 0, 0.733)), url(/assets/img/man.jpg);
     background-size: cover;
@@ -134,7 +136,9 @@ nav ul li a:hover {
     border-radius: 20px 20px;  
 }
 
-/**** article_wrapper ****/
+/* =======
+    article_wrapper
+===== */
 .article_wrapper {
     width: 70%;
     float: left;
@@ -151,6 +155,11 @@ hr {
     background-color: #ffffff;
     box-shadow: 1px 5px 11px rgba(0, 0, 0, 0.66); 
 }
+
+/* .article_width_content {
+
+}
+*/
 .article_design h1 {
     padding: 10px;
     background-color: #fd0000;
@@ -166,7 +175,9 @@ hr {
     margin-bottom: 2rem;
 }
 
-/**** aside_wrapper ****/
+/*===== 
+    aside_wrapper 
+==== */
 .aside_wrapper {
     width: 25%;
     float: right;
@@ -216,14 +227,17 @@ footer span {
     grid-gap: 120px;
     margin: auto;
 }
+
 .footer_fluid .link_media ul {
     display: flex;
 }
+
 .footer_fluid .link_media ul a {
     color: #fff;
     margin-right: 1px 0.2rem;
     padding: 10px;
 }
+
 .footer_fluid .link_media ul a i {
     border: 2px solid #ffffff;
     padding: 10px;
